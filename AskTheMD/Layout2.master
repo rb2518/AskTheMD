@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Layout2.master.cs" Inherits="Layout2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+           <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Login</title>
+
+      <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+       <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AskTheMD</a>
+    </div>
+      <div class="navbar-header">
+      <a class="navbar-brand" href="userforgetpassword.aspx">User</a>
+    </div>
+       <div class="navbar-header">
+      <a class="navbar-brand" href="adminforgotpassword.aspx">Admin</a>
+    </div>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="userregistration.aspx"><span class="glyphicon glyphicon-user"></span>Create_User</a></li>
+      <li><a href="adminregistration.aspx"><span class="glyphicon glyphicon-user"></span>Create_Admin</a></li>
+      <li><a href="adminlogout.aspx"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+    <script src="js/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      
+    </asp:ContentPlaceHolder>
+</body>
+</html>
